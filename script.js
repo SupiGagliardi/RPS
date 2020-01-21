@@ -13,8 +13,8 @@ let playerText = `player: `
 let computerText = 'cpu: '
 let player = 0;
 let computer = 0;
-playerScore.textContent = playerText;
-computerScore.textContent = computerText;
+playerScore.textContent = playerText + player;
+computerScore.textContent = computerText + computer;
 
 
 function cpuMove() {
