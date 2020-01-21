@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Minimalistic RPS</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h2>Score</h2>
-    <ul> 
-        Player:
-        <li id="playerScore">0</li>
-        Computer:
-        <li id="computerScore">0</li>
-    </ul>
-    <button id="Rock">rock</button>
-    <button id="Paper">paper</button>
-    <button id="Scissors">scissors</button>
-    <h2 class="outcome">Choose</h2>
+    <div class="container">
+        <nav>
+            <div class="scoreboard">
+                <h2>Score</h2>
+                <ul>
+                    <li id="playerScore"></li>
+                    <li id="computerScore"></li>
+                </ul>
 
-
-
+            </div>
+            <div class="credits">
+                <a href="https://github.com/SupiGagliardi/Rock-paper-scissors" target="blank">
+                    <img src="img/github-gray.svg" alt="github link" height="40px" width="auto">
+                    <p>minimalistic RPS</p>
+                </a>
+            </div>
+        </nav>
+        <div class="game">
+            <div class="rock" id="Rock">
+                <img src="img/rock.svg" alt="rock icon">
+                <p>rock</p>
+            </div>
+            <div class="paper" id="Paper">
+                <img src="img/paper.svg" alt="paper icon">
+                <p>paper</p>
+            </div>
+            <div class="scissors" id="Scissors">
+                <img src="img/scissors.svg" alt="scissors icon">
+                <p>scissors</p>
+            </div>
+        </div>
+        <div class="result">
+            <h2 class="outcome">Choose your weapon</h2>
+        </div>
+    </div>
 
 
 
     <script src="script.js"></script>
 </body>
+
 </html>

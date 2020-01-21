@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192.614" height="250.398" viewBox="0 0 192.614 250.398">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #262626;
+      }
+    </style>
+  </defs>
+  <path id="_ionicons_svg_md-document" class="cls-1" d="M211.568,48H120.077A24.076,24.076,0,0,0,96,72.077V274.322A24.076,24.076,0,0,0,120.077,298.4H264.537a24.076,24.076,0,0,0,24.077-24.077V125.046Zm-9.631,86.676V67.261l67.415,67.415Z" transform="translate(-96 -48)"/>
+</svg>

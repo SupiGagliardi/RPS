@@ -1,0 +1,181 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+@media (min-width: 1500px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #ECECEC;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        height: 33.3%;
+    }
+    .scoreboard {
+        color: #262626;
+        margin: 1.5% 0 0 4%;
+    }
+    .scoreboard h2 {
+        font-size: 3.2em;
+        font-weight: normal;
+    }
+    .scoreboard ul {
+        font-size: 1.4em;
+        margin-left: 15%;
+    }
+    .scoreboard li {
+        padding-top: 10%;
+    }
+    .credits {
+        position: relative;
+        width: 10%;
+        margin: 1.5% 3% 0 0;
+        padding-left: 9%;
+        padding-top: 1.8%;
+        color: #707070;
+    }
+    .credits img {
+        position: absolute;
+        left: 28%;
+        top: 5%;
+        color: #707070;
+    }
+    .credits a {
+        color: inherit;
+    }
+    .game {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 33.3%;
+    }
+    .game p {
+        padding-top: 10%;
+        text-align: center;
+        font-size: 1.5em;
+        color: #707070;
+    }
+    .game div {
+        cursor: pointer;
+    }
+
+    .game img {
+        height: 14em;
+        width: auto;
+        transition: 0.1s;
+    }
+
+    
+    .game img:hover {
+        height: 15em;
+        width: auto;
+    }
+
+    .result {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5em;
+        color: #262626;
+        height: 33.3%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #ECECEC;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        height: 33.3%;
+    }
+    .scoreboard {
+        color: #262626;
+        margin: 2% 0 0 4%;
+    }
+    .scoreboard h2 {
+        font-size: 3.2em;
+        font-weight: normal;
+    }
+    .scoreboard ul {
+        font-size: 1.4em;
+        margin-left: 15%;
+    }
+    .scoreboard li {
+        padding-top: 10%;
+    }
+    .credits {
+        position: relative;
+        width: 10%;
+        margin: 1% 3% 0 0;
+        padding-left: 9%;
+        padding-top: 1.8%;
+        color: #707070;
+    }
+    .credits img {
+        position: absolute;
+        left: 28%;
+        top: 5%;
+        color: #707070;
+    }
+    .credits a {
+        color: inherit;
+    }
+    .game {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 33.3%;
+    }
+    .game p {
+        padding-top: 10%;
+        text-align: center;
+        font-size: 1.2em;
+        color: #707070;
+    }
+    .game div {
+        cursor: pointer;
+    }
+    .game img {
+        height: 10em;
+        width: auto;
+        transition: 0.1s;
+    }
+
+    .game img:hover {
+        height: 11em;
+        width: auto;
+    }
+
+    .result {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5em;
+        color: #262626;
+        height: 33.3%;
+        text-align: center;
+    }
+}

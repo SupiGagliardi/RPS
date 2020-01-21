@@ -2,14 +2,19 @@
 
 const possibleOptions = ['Rock', 'Paper', 'Scissors'];
 
-const buttons = document.querySelectorAll('button');
+const choices = document.querySelectorAll('.game div');
 const outcome = document.querySelector('.outcome');
 
 let playerScore = document.querySelector('#playerScore');
 let computerScore = document.querySelector('#computerScore')
 
+
+let playerText = `player: `
+let computerText = 'cpu: '
 let player = 0;
 let computer = 0;
+playerScore.textContent = playerText;
+computerScore.textContent = computerText;
 
 
 function cpuMove() {
@@ -34,32 +39,33 @@ function computerPlay() {
 function playRound(playerSelection) {
 
 
+
     let playerChoice = playerSelection;
     let computerChoice = computerPlay();
 
     if (playerChoice === computerChoice) {
-        outcome.textContent = `Tie! Both drew ${playerChoice.toLowerCase()}.`
+        outcome.innerHTML = `Tie! <br> Both drew ${playerChoice.toLowerCase()}`
     } else if (
         (playerChoice === 'Rock' && computerChoice === 'Scissors') ||
         (playerChoice === 'Paper' && computerChoice === 'Rock') ||
         (playerChoice === 'Scissors' && computerChoice === 'Paper')) {
         
-        outcome.textContent = `You win! ${playerChoice} beats ${computerChoice.toLowerCase()}`
+        outcome.innerHTML = `You win! <br> ${playerChoice} beats ${computerChoice.toLowerCase()}`
         player++
-        playerScore.textContent = player;
+        playerScore.textContent = playerText + player
 
             
     } else {
-        outcome.textContent = `You lost! ${computerChoice} beats ${playerChoice.toLowerCase()}`
+        outcome.innerHTML = `You lost! <br> ${computerChoice} beats ${playerChoice.toLowerCase()}`
         computer++
-        computerScore.textContent = computer;
+        computerScore.textContent = computerText + computer;
     }
 }
 
 
-buttons.forEach(function (button) {
-    button.addEventListener('click', (e) => {
-        playRound(e.target.id)
+choices.forEach(function (choice) {
+    choice.addEventListener('click', (e) => {
+        playRound(e.currentTarget.id)
     })
 })
 
